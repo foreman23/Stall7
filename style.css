@@ -1,5 +1,16 @@
 .navbar-dark {
-    background: #475d77;
+    background: rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 767px) {
+    #navbarMenu {
+        background: rgba(0, 0, 0, .8);
+        padding: 0px;
+    }
+}
+
+.navHomeScreen {
+    position:absolute;
 }
 
 .navbar-dark img {
@@ -9,6 +20,7 @@
     margin-left: 15%;
 }
 
+
 .navbar-dark .navbar-nav{
     padding-right: 15px;
     padding-left: 15px;
@@ -17,7 +29,7 @@
 .navbar-dark .navbar-nav .nav-link{
     padding-right: 15px;
     padding-left: 15px;
-    color: #DDDDDD;
+    color: white;
 }
 
 .container-fluid {
@@ -30,9 +42,10 @@
 }
 
 .carousel-item{
-    width: 100%;
-    height: 1000px;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    background-color: #303e50;
 }
 .carousel-item img{
     max-width: 100%;
@@ -48,8 +61,30 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.video-background {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#bgvid {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100vw;
+    padding-bottom: 0px;
+    opacity: 80%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
 body {
     background-color: #303e50;
+}
+
+#homeBody {
+    background-color: black;
 }
 
 .contactLabels {
@@ -93,3 +128,44 @@ body {
     margin-bottom: 5%;
 }
 
+.caption {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    color: white;
+}
+
+.caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: .5rem;
+}
+
+.captionMobile {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    color: white;
+}
+
+.captionMobile h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: .5rem;
+}
+
+#getstartedBtn {
+    border-width: medium;
+    font-size: 1.1rem;
+    padding: .6rem .8rem;
+}
+
+.mobileBG {
+    position: relative;
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+    opacity: 80%;
+}
