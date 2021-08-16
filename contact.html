@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STALL7 Productions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <script src="https://kit.fontawesome.com/eded14146f.js" crossorigin="anonymous"></script>
 </head>
 <body id="contactBody">
 
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark navContactPage">
         <div class="container-fluid">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -26,8 +29,6 @@
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item">
                         <a href="gallery.html" class="nav-link">Gallery</a></li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About</a></li>
@@ -39,11 +40,10 @@
     </nav>
 
 
-
     <div class="container-fluid contactLabels">
         <div>
-            <div class="row contactRow justify-content-center">
-                <div class="col-sm-6 order-1">
+            <div class="row contactRow">
+                <div class="col-md-10 col-sm-12 order-md-2 contactTop">
                     <form action="" class="contactForm needs-validation" novalidate>
                         <div class="row">
                             <div class="col">
@@ -78,54 +78,61 @@
                         </div>
                         <div class="mb-2">
                             <label for="message">Message</label>
-                            <textarea type="text" name="message" id="contactMessage" class="form-control" rows="5" required></textarea>
+                            <textarea type="text" name="message" id="contactMessage" class="form-control" rows="7" required></textarea>
                             <div class="invalid-feedback">*Please enter a message</div>
                         </div>
                         <button type="submit" class="btn btn-lg btn-success" id="submitBtn">Send</button>
                     </form>
                 </div>
-                <div class="col-sm-3 order-12 contactText">
-                    <h1>Contact Us!</h1>
-                    <h6>Here is how you can connect with us.</h6>
-                    <ul class="list-group">
-                        <li>Email: christopherdingallen@gmail.com</li>
-                        <li>Phone: (971)-754-8044</li>
-                    </ul>
-                    
+                <div class="col-md-2 col-sm-12 order-md-1 contactInfo">
+                    <dl>
+                        <h1 class="d-none d-md-block">STALL7 Productions</h1>
+                        <hr class="d-none d-md-block">
+                        <dt>Phone:</dt>
+                        <dd>971-754-8044</dd>
+                        <dt>Email:</dt>
+                        <dd>STALL7@gmail.com</dd>
+                        <dt>YouTube:</dt>
+                        <dd>STALL7 Productions</dd>
+                    </dl>
                 </div>
             </div>
         </div>
     </div>
 
 
-        
-    <div class="footer">
+    <div class="container footer" id="contactFooter">
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-6">
                 <ul class="footer-list">
                     <h1>Social</h1>
                     <li><a href="https://www.youtube.com/channel/UCjYFPGdDeIBGI61DLk3Hh8g" target="_blank"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                    <li><i class="fab fa-vimeo-square fa-3x"></i></li>
-                    <li><i class="fab fa-twitter-square fa-3x"></i></li>
-                    <li><i class="fab fa-instagram-square fa-3x"></i></li>
+                    <li><a href=""><i class="fab fa-vimeo-square fa-3x"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter-square fa-3x"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square fa-3x"></i></a></li>
                 </ul>
             </div>
-            <div class="col-4">
+            <div class="d-none d-md-block col-md-6">
                 <ul class="footer-nav-list">
                     <h1>Navigation</h1>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
             </div>
         </div>
-        <div class="row">
+        <div class="row copyright-footer">
             <hr>
-            <h4>Copyright 2021 STALL7 Productions</h4>
+            <div class="col-md-12">
+                <script id="copyright">
+                    document.write('&copy;' );
+                    document.write(' 2021 - ');
+                    document.write(' STALL7 Productions - All Rights Reserved.');
+                </script>
+            </div>
         </div>
-    </div>
-
+    </div>   
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script.js"></script>

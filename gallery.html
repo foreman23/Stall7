@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STALL7 Productions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <script src="https://kit.fontawesome.com/eded14146f.js" crossorigin="anonymous"></script>
@@ -26,8 +29,6 @@
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item">
                         <a href="gallery.html" class="nav-link">Gallery</a></li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About</a></li>
@@ -38,34 +39,48 @@
         </div>
     </nav>
 
+    <div class="row galleryRow">
+        <div class="col-md-4">
+            <iframe class="galleryVid" id="galVid1" width="560" height="315" src="https://www.youtube.com/embed/YVtXxqyPHxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <iframe class="galleryVid" id="galVid2" width="560" height="315" src="https://www.youtube.com/embed/00qIk0neW4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+        <div class="col-md-4">
+            <iframe class="galleryVid" id="galVid3" width="560" height="315" src="https://www.youtube.com/embed/Kcv2kyU4cYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 
-        
-    <div class="footer">
+    <div class="container footer" id="galleryFooter">
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-6">
                 <ul class="footer-list">
                     <h1>Social</h1>
                     <li><a href="https://www.youtube.com/channel/UCjYFPGdDeIBGI61DLk3Hh8g" target="_blank"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                    <li><i class="fab fa-vimeo-square fa-3x"></i></li>
-                    <li><i class="fab fa-twitter-square fa-3x"></i></li>
-                    <li><i class="fab fa-instagram-square fa-3x"></i></li>
+                    <li><a href=""><i class="fab fa-vimeo-square fa-3x"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter-square fa-3x"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square fa-3x"></i></a></li>
                 </ul>
             </div>
-            <div class="col-4">
+            <div class="d-none d-md-block col-md-6">
                 <ul class="footer-nav-list">
                     <h1>Navigation</h1>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
             </div>
         </div>
-        <div class="row">
+        <div class="row copyright-footer">
             <hr>
-            <h4>Copyright 2021 STALL7 Productions</h4>
+            <div class="col-md-12">
+                <script id="copyright">
+                    document.write('&copy;' );
+                    document.write(' 2021 - ');
+                    document.write(' STALL7 Productions - All Rights Reserved.');
+                </script>
+            </div>
         </div>
-    </div>
+    </div>   
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
